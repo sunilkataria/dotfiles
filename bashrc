@@ -1,5 +1,4 @@
 
-source ~/.anaconda-setup
 # Set Console Font
 if [ $TERM = "linux" ] 
 then
@@ -11,3 +10,5 @@ then
     else
 	    source ~/.oh_my_bashrc
 fi
+
+source ~/.anaconda-setup
