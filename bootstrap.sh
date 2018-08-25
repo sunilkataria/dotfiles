@@ -20,6 +20,7 @@ cd -
 #rm -rf awesome-terminal-fonts
 
 
+
 mkdir -p $HOME/.bash/themes/agnoster-bash
 git clone https://github.com/speedenator/agnoster-bash.git .bash/themes/agnoster-bash
 
@@ -29,6 +30,8 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosu
 #chmod +x ~/init_dotfiles.sh
 #~/init_dotfiles.sh
 
+
+git clone https://github.com/anishathalye/dotbot ~/.dotfiles/dotbot
 
 mkdir -p git-repos
 git clone https://github.com/ansible/ansible.git ~/git-repos/ansible-repo
