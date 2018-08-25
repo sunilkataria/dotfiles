@@ -83,6 +83,8 @@ fi
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
 
+source $HOME/git-repos/ansible-repo/hacking/env-setup -q
+
 function ok-count() {
 grep -c  "All OK" ~/extract-folder-`date -I`
 }
@@ -125,3 +127,4 @@ sleep 1
 sudo mv ${1}.iso -v  /storage/ISOs/
 sudo sync
 }
+
