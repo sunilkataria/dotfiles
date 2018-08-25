@@ -18,7 +18,7 @@
         ~/.zshrc:
                 force: true
                 path: zshrc
-        ~/.simple_zshrc:
+        ~/.plain_zshrc:
                 force: true
                 path: plain_zshrc
         ~/.zshrc_oh_my_zsh:
