@@ -24,3 +24,6 @@
         ~/.zshrc_oh_my_zsh:
                 force: true
                 path: oh_my_zshrc
+        ~/.anaconda-setup:
+                force: true
+                path: anaconda-setup

@@ -1,3 +1,5 @@
+
+source ~/.anaconda-setup
 # Set Console Font
 if [ $TERM = "linux" ] 
 then
