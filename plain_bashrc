@@ -1,3 +1,5 @@
+
+source /etc/bashrc
 source $HOME/git-repos/ansible-repo/hacking/env-setup -q
 
 function ok-count() {
