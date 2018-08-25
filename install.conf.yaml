@@ -3,16 +3,24 @@
                 force: true
                 path: bashrc
 
-        ~/.bashrc_backup:
+        ~/.plain_bashrc:
                 force: true
-                path: bashrc_backup
+                path: plain_bashrc
 
-        ~/.bashrc: 
+        ~/.oh_my_bashrc:
                 force: true
-                path: bashrc
+                path: oh_my_bashrc
+
         ~/.bash_logout:
                 force: true
                 path: bash_logout
+
         ~/.zshrc:
                 force: true
                 path: zshrc
+        ~/.simple_zshrc:
+                force: true
+                path: plain_zshrc
+        ~/.zshrc_oh_my_zsh:
+                force: true
+                path: oh_my_zshrc
