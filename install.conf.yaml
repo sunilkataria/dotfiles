@@ -3,6 +3,10 @@
                 force: true
                 path: bashrc
 
+        ~/.bashrc_backup:
+                force: true
+                path: bashrc_backup
+
         ~/.bashrc: 
                 force: true
                 path: bashrc

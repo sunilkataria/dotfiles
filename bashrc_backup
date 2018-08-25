@@ -1,9 +1,9 @@
 # Path to your oh-my-bash installation.
-export OSH=$HOME/.oh-my-bash
+export OSH=/home/rootfs/.oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="font"
+OSH_THEME="pro"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -82,63 +82,8 @@ fi
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
-
-source $HOME/git-repos/ansible-repo/hacking/env-setup -q
-
-function ok-count() {
-grep -c  "All OK" ~/extract-folder-`date -I`
-}
-
-function iso-count() {
-#grep -c ’ ~/loop-`date -I`
-grep -c "\->" ~/loop-`date -I`
-}
-
-function download-count() {
-ls -ltrh /storage/MyJDownloadersDownload/  |grep -c ^d
-}
-
-function mkisowithoutrar () {
-/bin/mkisofs -o ${1}.iso -J -A -V -v -r -R ${1}/
-sudo mv ${1}.iso -v  /storage/ISOs/
-sudo sync
-#rm -rf ${1}
-}
-
-function loop_iso_without_rar () {
-cd /storage/MyJDownloadersDownload/
-for i in $(ls -1 | grep -v " ")
-do
-mkisowithoutrar ${i}
-done
-}
-
-function loop_mkiso () {
-unalias ls
-cd /storage/MyJDownloadersDownload
-for i in `ls -1`; do mkmyiso $i; sleep 5 && rm -rvf $i ;done
-
-}
-
-
-function mkmyiso () {
-/bin/mkisofs -o ${1}.iso -joliet-long -J -A -V -v -r -R ${1}/
-sleep 1
-sudo mv ${1}.iso -v  /storage/ISOs/
-sudo sync
-}
-
 export THEME=$HOME/.bash/themes/agnoster-bash/agnoster.bash
 if [[ -f $THEME ]]; then
-    export DEFAULT_USER=`whoami`
-    source $THEME
-fi
-
-
-# Set Console Font
-if [ $TERM = linux ]
-then
-	    setfont ter-k32b.psf.gz
-    else
-	    source ~/.bashrc_backup
-fi
+	    export DEFAULT_USER=`whoami`
+	        source $THEME
+	fi
