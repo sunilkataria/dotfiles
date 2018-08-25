@@ -13,6 +13,7 @@ POWERLEVEL9K_COLOR_SCHEME='light'
 #POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery load time dir vcs background_jobs_joined)
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(time dir vcs background_jobs_joined)
 
+#POWERLEVEL9K_TIME_FORMAT="%D{%d-%m-%Y %H:%M:%S}"
 POWERLEVEL9K_TIME_FOREGROUND='blue'
 POWERLEVEL9K_TIME_BACKGROUND='white'
 
