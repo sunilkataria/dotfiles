@@ -82,3 +82,46 @@ fi
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
+
+function ok-count() {
+grep -c  "All OK" ~/extract-folder-`date -I`
+}
+
+function iso-count() {
+#grep -c ’ ~/loop-`date -I`
+grep -c "\->" ~/loop-`date -I`
+}
+
+function download-count() {
+ls -ltrh /storage/MyJDownloadersDownload/  |grep -c ^d
+}
+
+function mkisowithoutrar () {
+/bin/mkisofs -o ${1}.iso -J -A -V -v -r -R ${1}/
+sudo mv ${1}.iso -v  /storage/ISOs/
+sudo sync
+#rm -rf ${1}
+}
+
+function loop_iso_without_rar () {
+cd /storage/MyJDownloadersDownload/
+for i in $(ls -1 | grep -v " ")
+do
+mkisowithoutrar ${i}
+done
+}
+
+function loop_mkiso () {
+unalias ls
+cd /storage/MyJDownloadersDownload
+for i in `ls -1`; do mkmyiso $i; sleep 5 && rm -rvf $i ;done
+
+}
+
+
+function mkmyiso () {
+/bin/mkisofs -o ${1}.iso -joliet-long -J -A -V -v -r -R ${1}/
+sleep 1
+sudo mv ${1}.iso -v  /storage/ISOs/
+sudo sync
+}
