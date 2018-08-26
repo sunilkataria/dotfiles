@@ -27,3 +27,6 @@
         ~/.anaconda-setup:
                 force: true
                 path: anaconda-setup
+        ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh:
+                force: true
+                path: zsh-autosuggestions.plugin.zsh
