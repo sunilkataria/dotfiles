@@ -2,7 +2,7 @@
 # Set Console Font
 if [ $TERM = "linux" ] 
 then
-	    setfont ter-k32b.psf.gz
+	    setfont ter-732b
 	    source ~/.plain_bashrc
     elif [ $TERM = "screen-256color" ]
       then
