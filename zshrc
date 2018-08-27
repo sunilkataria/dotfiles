@@ -1,4 +1,6 @@
 
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
 source ~/.anaconda-setup
 # Set Console Font
 if [ $TERM = linux ]
