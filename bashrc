@@ -12,3 +12,5 @@ then
 fi
 
 source ~/.anaconda-setup
+export JAVA_HOME=/home/sunilk/java/jdk1.8u181
+export PATH=$JAVA_HOME/bin:$PATH
