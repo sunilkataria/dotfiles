@@ -12,3 +12,4 @@ then
 fi
 
 source ~/.anaconda-setup
+source ~/.bash_profile
