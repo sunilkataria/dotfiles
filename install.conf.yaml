@@ -21,7 +21,7 @@
         ~/.plain_zshrc:
                 force: true
                 path: plain_zshrc
-        ~/.zshrc_oh_my_zsh:
+        ~/.oh_my_zshrc:
                 force: true
                 path: oh_my_zshrc
         ~/.anaconda-setup:
